@@ -1,0 +1,35 @@
+// type: 'holiday' | 'exam' | 'event' | 'meeting'
+export const events = [
+  { id: 'ev1',  title: 'Republic Day',                type: 'holiday', date: '2026-01-26', color: 'red',    description: 'National holiday — school closed.' },
+  { id: 'ev2',  title: 'Science Fair',                type: 'event',   date: '2026-01-28', color: 'blue',   description: 'Annual inter-class science exhibition. All classes to participate.' },
+  { id: 'ev3',  title: 'Unit Test 1 — Mathematics',   type: 'exam',    date: '2026-01-20', color: 'orange', description: 'Unit Test 1 for classes 9 & 10. Syllabus: Chapters 1-5.' },
+  { id: 'ev4',  title: 'Unit Test 1 — Science',       type: 'exam',    date: '2026-01-21', color: 'orange', description: 'Unit Test 1 for all classes. Syllabus: Units 1-3.' },
+  { id: 'ev5',  title: 'Parent-Teacher Meeting',      type: 'meeting', date: '2026-02-07', color: 'green',  description: 'Semester 1 report card discussion. Parents must book slots in advance.' },
+  { id: 'ev6',  title: 'Midterm Examinations Begin',  type: 'exam',    date: '2026-02-09', color: 'orange', description: 'Midterm exams for all classes. Timetable distributed separately.' },
+  { id: 'ev7',  title: 'Midterm — Mathematics',       type: 'exam',    date: '2026-02-10', color: 'orange', description: 'Midterm Mathematics exam. Duration: 2 hours.' },
+  { id: 'ev8',  title: 'Midterm — Science',           type: 'exam',    date: '2026-02-11', color: 'orange', description: 'Midterm Science exam. Duration: 2 hours.' },
+  { id: 'ev9',  title: 'Midterm — English',           type: 'exam',    date: '2026-02-12', color: 'orange', description: 'Midterm English exam. Duration: 2 hours.' },
+  { id: 'ev10', title: 'Midterm — History & CS',      type: 'exam',    date: '2026-02-13', color: 'orange', description: 'History and Computer Science midterm exams.' },
+  { id: 'ev11', title: 'Unit Test 2 — Mathematics',   type: 'exam',    date: '2026-02-25', color: 'orange', description: 'Unit Test 2 for classes 9 & 10. Syllabus: Chapters 6-10.' },
+  { id: 'ev12', title: 'Unit Test 2 — All Subjects',  type: 'exam',    date: '2026-02-26', color: 'orange', description: 'Unit Test 2 for all subjects. Refer individual subject schedules.' },
+  { id: 'ev13', title: 'Holi — School Celebration',  type: 'event',   date: '2026-03-06', color: 'blue',   description: 'Cultural celebration in school premises. Formal holiday the next day.' },
+  { id: 'ev14', title: 'Holi Holiday',                type: 'holiday', date: '2026-03-07', color: 'red',    description: 'Public holiday.' },
+  { id: 'ev15', title: 'Annual Sports Day',           type: 'event',   date: '2026-03-20', color: 'blue',   description: 'Inter-house athletics competition at the main ground. Parents are invited.' },
+  { id: 'ev16', title: 'Final Exam — Mathematics',    type: 'exam',    date: '2026-03-10', color: 'orange', description: 'Final annual exam. Duration: 3 hours.' },
+  { id: 'ev17', title: 'Final Exam — Science',        type: 'exam',    date: '2026-03-11', color: 'orange', description: 'Final annual exam. Duration: 3 hours.' },
+  { id: 'ev18', title: 'Final Exam — English',        type: 'exam',    date: '2026-03-12', color: 'orange', description: 'Final annual exam. Duration: 3 hours.' },
+  { id: 'ev19', title: 'Final Exam — History',        type: 'exam',    date: '2026-03-13', color: 'orange', description: 'Final annual exam. Duration: 2.5 hours.' },
+  { id: 'ev20', title: 'Final Exam — Computer Sc.',   type: 'exam',    date: '2026-03-16', color: 'orange', description: 'Final annual exam including practical component.' },
+  { id: 'ev21', title: 'Result Day',                  type: 'event',   date: '2026-03-25', color: 'blue',   description: 'Annual report cards distributed to students. Parents invited.' },
+  { id: 'ev22', title: 'Good Friday',                 type: 'holiday', date: '2026-04-03', color: 'red',    description: 'Public holiday.' },
+  { id: 'ev23', title: 'Summer Vacation Begins',      type: 'holiday', date: '2026-04-13', color: 'red',    description: 'School closes for summer vacation. Reopens June 15.' },
+  { id: 'ev24', title: 'Annual Day Celebration',      type: 'event',   date: '2026-03-28', color: 'blue',   description: 'Prize distribution, cultural performances, and farewell to graduating students.' },
+  { id: 'ev25', title: 'Fee Submission Deadline',     type: 'event',   date: '2026-03-31', color: 'green',  description: 'Last date for Term 3 fee submission without late charges.' },
+];
+
+export const eventTypeColors = {
+  holiday: 'red',
+  exam:    'orange',
+  event:   'blue',
+  meeting: 'green',
+};

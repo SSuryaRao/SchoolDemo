@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version && npm --version 2>/dev/null; npx --version 2>/dev/null)",
+      "Bash(find \"E:\\\\Coding\\\\SchoolDemo/backend/src\" -type f -name \"*.js\" -o -name \"*.json\" 2>/dev/null | sort)",
+      "Bash(ls \"E:/Coding/SchoolDemo/backend/src/controllers/data\" 2>/dev/null; ls \"E:/Coding/SchoolDemo/backend/src/models\"/* 2>/dev/null; ls \"E:/Coding/SchoolDemo/backend/src/routes\"/* 2>/dev/null; ls \"E:/Coding/SchoolDemo/backend/src/seed\"/* 2>/dev/null)",
+      "Bash(dir /s /b \"E:\\\\Coding\\\\SchoolDemo\\\\backend\\\\src\" 2>&1)",
+      "Bash(cd \"E:/Coding/SchoolDemo\" && npm create vite@latest frontend -- --template react 2>&1)",
+      "Bash(cd \"E:/Coding/SchoolDemo/frontend\" && npm install && npm install tailwindcss @tailwindcss/vite @headlessui/react @heroicons/react react-hot-toast date-fns clsx @tanstack/react-table framer-motion recharts react-router-dom 2>&1)",
+      "Bash(cd \"E:/Coding/SchoolDemo/frontend\" && npm install tailwindcss@3 postcss autoprefixer @headlessui/react @heroicons/react react-hot-toast date-fns clsx @tanstack/react-table framer-motion recharts react-router-dom 2>&1)",
+      "Bash(cd \"E:/Coding/SchoolDemo/frontend\" && npx tailwindcss init -p 2>&1)",
+      "Bash(cd \"E:/Coding/SchoolDemo/frontend\" && npm run build 2>&1)",
+      "Bash(git init:*)"
+    ]
+  }
+}
