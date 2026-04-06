@@ -25,13 +25,13 @@ export default function Modal({ open, onClose, title, children, size = 'md' }) {
               leave="ease-in duration-150" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className={`w-full ${sizes[size]} bg-white rounded-2xl shadow-xl overflow-hidden`}>
-                <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+                <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-gray-100">
                   <Dialog.Title className="text-base font-semibold text-gray-900">{title}</Dialog.Title>
                   <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors">
                     <XMarkIcon className="w-5 h-5" />
                   </button>
                 </div>
-                <div className="p-6">{children}</div>
+                <div className="p-4 sm:p-6">{children}</div>
               </Dialog.Panel>
             </Transition.Child>
           </div>

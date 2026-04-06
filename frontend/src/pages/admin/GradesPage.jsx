@@ -87,7 +87,7 @@ export default function GradesPage() {
       <PageHeader title="Grades & Examinations" subtitle="Gradebook and academic analytics" />
 
       <Tab.Group>
-        <Tab.List className="flex gap-1 bg-white border border-gray-200 rounded-xl p-1 mb-6 w-fit">
+        <Tab.List className="flex gap-1 bg-white border border-gray-200 rounded-xl p-1 mb-6 w-fit max-w-full overflow-x-auto">
           {['Gradebook', 'Analytics'].map(tab => (
             <Tab key={tab} className={({ selected }) =>
               `px-4 py-2 text-sm font-medium rounded-lg transition-colors ${selected ? 'bg-primary-600 text-white' : 'text-gray-500 hover:text-gray-700'}`
@@ -103,7 +103,7 @@ export default function GradesPage() {
                 <select className="select w-32" value={selectedClass} onChange={e => setSelectedClass(e.target.value)}>
                   {classes.map(c => <option key={c} value={c}>Class {c}</option>)}
                 </select>
-                <span className="text-xs text-gray-400">Click the edit icon to update a student's grades</span>
+                <span className="hidden sm:inline text-xs text-gray-400">Click the edit icon to update a student's grades</span>
                 <button onClick={() => setExportOpen(true)} className="btn-secondary ml-auto">Export PDF</button>
               </div>
               <div className="overflow-x-auto">

@@ -65,7 +65,7 @@ export default function AttendancePage() {
       <PageHeader title="Attendance" subtitle="Mark and track student attendance" />
 
       <Tab.Group>
-        <Tab.List className="flex gap-1 bg-white border border-gray-200 rounded-xl p-1 mb-6 w-fit">
+        <Tab.List className="flex gap-1 bg-white border border-gray-200 rounded-xl p-1 mb-6 w-fit max-w-full overflow-x-auto">
           {['Mark Attendance', 'Overview'].map(tab => (
             <Tab key={tab} className={({ selected }) =>
               `px-4 py-2 text-sm font-medium rounded-lg transition-colors ${selected ? 'bg-primary-600 text-white' : 'text-gray-500 hover:text-gray-700'}`

@@ -118,11 +118,11 @@ export default function DashboardPage() {
 
       {/* Charts */}
       <div className="grid lg:grid-cols-5 gap-4">
-        <div className="page-card p-6 lg:col-span-3">
+        <div className="page-card p-4 lg:p-6 lg:col-span-3">
           <h3 className="text-sm font-semibold text-gray-700 mb-4">Attendance This Week</h3>
           <AttendanceBarChart />
         </div>
-        <div className="page-card p-6 lg:col-span-2">
+        <div className="page-card p-4 lg:p-6 lg:col-span-2">
           <h3 className="text-sm font-semibold text-gray-700 mb-4">Grade Distribution</h3>
           <GradeDistributionPie />
         </div>
@@ -130,7 +130,7 @@ export default function DashboardPage() {
 
       {/* Activity + Events */}
       <div className="grid lg:grid-cols-2 gap-4">
-        <div className="page-card p-6">
+        <div className="page-card p-4 lg:p-6">
           <h3 className="text-sm font-semibold text-gray-700 mb-4">Recent Activity</h3>
           <div className="space-y-3">
             {recentActivity.map((item, i) => (
@@ -147,7 +147,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <div className="page-card p-6">
+        <div className="page-card p-4 lg:p-6">
           <h3 className="text-sm font-semibold text-gray-700 mb-4">Upcoming Events</h3>
           {upcomingEvents.length === 0 ? (
             <p className="text-sm text-gray-400">No upcoming events.</p>
@@ -171,7 +171,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Quick actions */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[
           { label: 'Mark Attendance', icon: '📋', desc: "Today's class attendance",      path: '/admin/attendance', color: 'blue' },
           { label: 'View Fee Dues',   icon: '💳', desc: `${formatCurrency(feeSummary.totalOverdue)} overdue`, path: '/admin/fees', color: 'green' },

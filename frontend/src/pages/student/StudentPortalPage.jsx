@@ -38,7 +38,7 @@ export default function StudentPortalPage() {
   return (
     <div className="space-y-6">
       {/* Welcome card */}
-      <div className="page-card p-6">
+      <div className="page-card p-4 sm:p-6">
         <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
           <Avatar name={student.name} size="xl" />
           <div className="flex-1">
@@ -54,7 +54,7 @@ export default function StudentPortalPage() {
       </div>
 
       {/* Today's timetable */}
-      <div className="page-card p-6">
+      <div className="page-card p-4 sm:p-6">
         <h3 className="text-sm font-semibold text-gray-700 mb-4">
           Today's Timetable
           {todaySchedule ? <span className="text-gray-400 font-normal ml-2">— {todaySchedule.day}</span> : ''}
@@ -92,8 +92,9 @@ export default function StudentPortalPage() {
 
       <div className="grid lg:grid-cols-2 gap-4">
         {/* Grades */}
-        <div className="page-card p-6">
+        <div className="page-card p-4 sm:p-6">
           <h3 className="text-sm font-semibold text-gray-700 mb-4">My Grades</h3>
+          <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="border-b border-gray-100">
@@ -114,6 +115,7 @@ export default function StudentPortalPage() {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
 
         {/* Upcoming exams + Remarks */}
